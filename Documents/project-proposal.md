@@ -15,11 +15,11 @@ The software solution developed in this project is aimed to be adopted worldwide
 
 ## Justification
 
-We believe this project allows both team members to exercise the lessons and tools gained at Loyola Marymount University as well as through individual experiences outside of academics.
+We believe this project allows both team members to exercise the lessons and tools gained at LMU as well as through individual experiences outside of academics.
+
+The project relies heavily in the concepts acquired by both team members in LMU's Artificial Intelligence, and Deep Learning courses. The biggest and more challenging aspect of the project comes down to using the algorithms and concepts form those classes in a practical scenario with great potential.
 
 We will be implementing our frontend education, gained through Interaction Design, to create a user-friendly interface for individuals who have little experience with machine learning applications. We will also be able to use what we have learned in Intro to Database Systems course to store and handle big collections of information "Big Data."
-
-The project also relies heavily in the concepts acquired by both team members in LMU's Artificial Intelligence, and Deep Learning courses. The biggest and more challenging aspect of the project comes down to using the algorithms and concepts form those classes in a practical scenario with great potential.
 
 Finally the project leaves room for both members to grow and learn; for instance none of the team members have ever worked in collaboration with a department outside LMU's Computer Science and Applied Mathematics. We will not only need to exercise good communication, but also we must learn the concepts and skills that are key for a project in the Environmental Sciences to succeed.
 
