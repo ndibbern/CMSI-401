@@ -110,9 +110,7 @@ This section will detail the Deeper Insights project schedule including the peop
 
 The following GANTT Chart visualizes the duration of the subtasks for Deeper Insights in relationship with each other.
 
-
-
-ADD
+![GANTT-chart](./GANTT-chart.png)
 
 
 
