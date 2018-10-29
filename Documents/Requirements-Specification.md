@@ -20,7 +20,7 @@ This Software Requirements Specification (SRS) documents the requirements for th
 
 The core of the efficiency of the algorithm is the availability of high-quality data, which contains all the information needed for the algorithm to be trained efficiently and produce accurate predictions. Deeper Insights has 3 main focus points: simplicity to use for people who are not familiar with deep learning algorithms, accurate predictions and finally flexibility to allow the scalability to larger amounts of data as more is collected as the years go by.
 
-The Deeper Insights algorithm is comprised of both a Recurrent Neural Network (RNN), a Convolutional Neural Network (CNN) and a user interface to present the results of the algorithm in real time as new data is obtained. The RNN is used to make accurate predictions on data that is obtained over a time period (ours is from 1982 - present), and the CNN is to process data that has many "layers" (like in pictures), such layers in our algorithm would be climate change related features such as air temperature, sea temperature, pressure, humidity. Such features are measured on an area so can be represented as a grid, hence each of this will represent a layer to be inputted in the CNN.
+The Deeper Insights algorithm is comprised of a Recurrent Neural Network (RNN), a Convolutional Neural Network (CNN) and a user interface to present the results of the algorithm in real time as new data is obtained. The RNN is used to make accurate predictions on data that is obtained over a time period (ours is from 1982 - present), and the CNN is to process data that has many "layers" (like in pictures), such layers in our algorithm would be climate change related features such as air temperature, sea temperature, pressure, humidity. Such features are measured on an area so can be represented as a grid, hence each of this will represent a layer to be inputted in the CNN.
 
 ## 5.2 Functional Requirements
 
@@ -30,11 +30,15 @@ The Deeper Insights algorithm will allow governments from countries like the Uni
 
 #### 5.2.1.1 The frontend shall display an about page to provide information about Deeper Connections to potential users.
 
-#### 5.2.1.2 The frontend shall display climate change predictions.
+#### **5.2.1.2 Frontend Climate Display**
 
-##### 		5.2.1.2.1 The frontend shall display a graph with the predictions.
+##### **5.2.1.2.1 The Frontend shall display climate change predictions.**
 
-##### 		5.2.1.2.2 The Frontend shall provide an option to view predictions from either El Niño or climate change.
+##### **5.2.1.2.2  The** **Frontend** **shall display a graph with the predictions.**
+
+##### **5.2.1.2.3  The** **Frontend** **shall provide an option to view predictions from at least                          two sources.**
+
+#####                 **Source options will include but not be limited to “El Niño” or “Climate Change”.**
 
 #### 5.2.1.3 The Frontend shall display the Earth Systems Research Laboratory Logo
 
@@ -114,13 +118,15 @@ The Deeper Insights algorithm will allow governments from countries like the Uni
 
 ## 5.3 Performance Requirements
 
-#### 5.3.1 Fast Navigation. Users should be able to access any of the navigation items within seconds of submitting the request.
+#### 5.3.1 Fast Navigation. Users should be able to access any of the navigation items within 2 seconds of submitting the request.
 
-#### 5.3.2 Modular System Design. The system design should allow for easy incorporation and modification for use in equivalent scenarios.
+#### 5.3.2 Modular System Design. The system design should allow for incorporation for use in equivalent scenarios such that it takes the user less than 10 minutes to do so 
 
-#### 5.3.3 Network Crash Recovery. The system should be able to deal with network crashes.
+#### 5.3.3 Modular System Design. The system design should allow for modification for use in equivalent scenarios such that it takes the user less than 10 minutes to do so 
 
-#### 5.3.4 Accessibility. The system will meet the minimum requirements for software accessibility.
+#### 5.3.4 Network Crash Recovery. The system should be able to deal with network crashes.
+
+#### 5.3.5 Accessibility. The system will meet the minimum requirements for software accessibility.
 
 ## 5.4 Project Environment Requirements
 
