@@ -3,8 +3,8 @@ import torch.nn.functional as F
 import numpy as np
 import math
 
-word2idx  =  torch.load('../../data/PTB/data/word2idx.pt')
-idx2word  =  torch.load('../../data/PTB/data/idx2word.pt')
+# word2idx  =  torch.load('../../data/PTB/data/word2idx.pt')
+# idx2word  =  torch.load('../../data/PTB/data/idx2word.pt')
 
 def normalize_gradient(net):
 

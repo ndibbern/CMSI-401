@@ -18,9 +18,9 @@
 
 This Software Requirements Specification (SRS) documents the requirements for the Deeper Insights Deep Learning Algorithm. Deeper Insights is a private deep learning algorithm aimed to be used by the government and non-profit organizations. The algorithm was developed with the aim to predict climate change and El Niño, although flexibility in the algorithm implementation allows for the possible extension of this algorithm to be used to predict other natural disasters such as the trajectory of a hurricane and earthquakes.
 
-The core of the efficiency of the algorithm is the availability of high-quality data, which contains all the information needed for the algorithm to be trained efficiently and produce accurate predictions. Deeper Insights has 3 main focus points: simplicity to use for people who are not familiar with deep learning algorithms, accurate predictions and finally flexibility to allow the scalability to larger amounts of data as more is collected as the years go by.
+The core of the efficiency of the algorithm is the availability of high-quality data, which contains all the information needed for the algorithm to be trained efficiently and to produce accurate predictions. Deeper Insights has 3 main focus points: simplicity to use for people who are not familiar with deep learning algorithms, accurate predictions, and flexibility to allow scalability to larger amounts of data as more is collected over time.
 
-The Deeper Insights algorithm is comprised of a Recurrent Neural Network (RNN), a Convolutional Neural Network (CNN) and a user interface to present the results of the algorithm in real time as new data is obtained. The RNN is used to make accurate predictions on data that is obtained over a time period (ours is from 1982 - present), and the CNN is to process data that has many "layers" (like in pictures), such layers in our algorithm would be climate change related features such as air temperature, sea temperature, pressure, humidity. Such features are measured on an area so can be represented as a grid, hence each of this will represent a layer to be inputted in the CNN.
+The Deeper Insights algorithm is composed of a Recurrent Neural Network (RNN), a Convolutional Neural Network (CNN) and a user interface to present the results of the algorithm in real time as new data is obtained. The RNN is used to make accurate predictions on data that is obtained over a time period (ours is from 1982 - present), and the CNN is to process data that has many "layers" (like in pictures); such layers in our algorithm would be climate change-related features such as air temperature, sea temperature, pressure, and humidity. Such features are measured on an area, and thus can be represented as a grid, hence each of these will represent a layer to be input in the CNN.
 
 ## 5.2 Functional Requirements
 
@@ -34,11 +34,13 @@ The Deeper Insights algorithm will allow governments from countries like the Uni
 
 ##### **5.2.1.2.1 The Frontend shall display climate change predictions.**
 
-##### **5.2.1.2.2  The** **Frontend** **shall display a graph with the predictions.**
+##### 		 The **Frontend** will display the predictions in a graph.
 
-##### **5.2.1.2.3  The** **Frontend** **shall provide an option to view predictions from at least                          two sources.**
+##### **5.2.1.2.2  The** **Frontend** **shall provide an option to view predictions from at least                          two sources.**
 
 #####                 **Source options will include but not be limited to “El Niño” or “Climate Change”.**
+
+**5.2.1.2.3 The Front end shall display climate change predictions for the next one year period.**
 
 #### 5.2.1.3 The Frontend shall display the Earth Systems Research Laboratory Logo
 
@@ -48,13 +50,11 @@ The Deeper Insights algorithm will allow governments from countries like the Uni
 
 ##### 		5.2.1.5.1 The navigation bar shall display a button linking to the about page, el Niño prediction and Climate Change prediction tabs
 
-
-
 ### 5.2.2 Convolutional Recurrent Neural Network (CRNN) Algorithm
 
-#### 5.2.2.1 The RNN algorithm shall import the correct libraries.  
+##### 5.2.2.1 The CRNN algorithm shall import the correct libraries.  
 
-#### The correct libraries will include but not be limited to:
+##### The correct libraries will include but not be limited to:
 
 * ##### torch library
 
@@ -62,25 +62,25 @@ The Deeper Insights algorithm will allow governments from countries like the Uni
 
 * ##### torchvision library
 
-#### 5.2.2.2 The CRNN algorithm shall have at least 20 hidden layers, following the equation Nh=Ns/(α∗(Ni+No)) were Ni is number of inputs, No number of outputs Ns it the number of items in sampling training set and α the learning rate.
+##### 5.2.2.2.1 The CRNN algorithm shall have at least 20 hidden layers, following the equation Nh=Ns/(α∗(Ni+No)) were Ni is number of inputs, No number of outputs Ns it the number of items in sampling training set and α the learning rate.
 
-##### 		5.2.2.2.1 The CRNN algorithm's hidden layers shall each have a dimension of 100
+##### 		5.2.2.2.2 The CRNN algorithm's hidden layers shall each have a dimension of 100 neurons
 
-##### 		5.2.2.2.2 The CRNN algorithm shall contain at least 10 convolutional layers
+##### 		5.2.2.2.3 The CRNN algorithm shall contain at least 10 convolutional layers
 
-#### 5.2.2.3 The CRNN algorithm shall instantiate a Model Class
+##### 5.2.2.2.4 The CRNN algorithm shall instantiate a Model Class
 
-#### 5.2.2.4 The CRNN algorithm shall instantiate a Loss Class
+##### 5.2.2.2.5 The CRNN algorithm shall instantiate a Loss Class
 
-##### 	5.2.2.4.1 The CRNN algorithm's Loss Class instance shall include the cross-entropy loss
+##### 	5.2.2.2.6 The CRNN algorithm's Loss Class instance shall include the cross-entropy loss
 
-##### 	5.2.2.4.1 The CRNN algorithm's Loss Class instance shall include a SoftMax in it
+##### 	5.2.2.2.7 The CRNN algorithm's Loss Class instance shall include a SoftMax in it
 
-#### 5.2.2.5 The CRNN algorithm shall Instantiate an Optimizer Class
+##### 5.2.2.2.8 The CRNN algorithm shall Instantiate an Optimizer Class
 
-##### 	5.2.2.5.1 The RNN algorithm's Optimizer Class shall include an Stochastic Gradient Descent 	       .      (SGD) optimizer
+##### 	5.2.2.2.9 The RNN algorithm's Optimizer Class shall include an Stochastic Gradient Descent  (SGD) optimizer
 
-#### 5.2.2.6 The CRNN algorithm shall be trained
+##### 5.2.2.2.10 The CRNN algorithm shall be trained
 
 #### The CRNN algorithm will be trained with at least 4 years worth of data
 
@@ -98,7 +98,7 @@ The Deeper Insights algorithm will allow governments from countries like the Uni
 
 
 
-### 5.2.3 Data
+### 5.2.3 Data Requirements
 
 #### 5.2.3.1 The data shall include information about climate change and El Niño features.
 
@@ -108,13 +108,29 @@ The Deeper Insights algorithm will allow governments from countries like the Uni
 
 * ##### Pressure
 
+* ##### Humidity
+
+* ##### Wind
+
 * ##### Air Temperature
 
-#### 5.2.3.3 The data shall be separated into training data and testing data
+#### 5.2.3.2 The data shall be separated into training data and testing data
 
-#### 5.2.3.4 The data shall be cleaned using Python library Pandas
+#### 	The training data will be used to train the algorithnm
 
-#### 5.2.3.5 The data shall be stored in Google Cloud
+#### 	The testing data will be used to test the efficiency of the 	algorithm
+
+#### 5.2.3.3 The data shall be cleaned using Python library Pandas
+
+#### 	Cleaning will involve the process of replacing any missing entries with the mean value of the feature that entry belongs to
+
+#### 	Cleaning will involve the process of normalizing the data according to each feature
+
+#### 	Cleaning will involve the process of removing unneeded features
+
+#### 	Cleaning will involve centering the values around zero	
+
+#### 5.2.3.4 The data shall be stored in Google Cloud
 
 ## 5.3 Performance Requirements
 
