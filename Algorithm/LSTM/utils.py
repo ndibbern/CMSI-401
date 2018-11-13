@@ -1,15 +1,27 @@
 import torch
 import numpy as np
 
-def get_error( scores , labels ):
-
-    bs=scores.size(0)
+def get_error(scores , labels):
     predicted_labels = scores.detach().numpy()
     array_labels = labels.detach().numpy()
-    num_matches = 0
-    for i in range(len(predicted_labels[0])):
-        if abs(predicted_labels[0][i] - array_labels[i]) < 0.01:
-            num_matches += 1
+
+    wrong = 0
+    total = 0
+    for x, y in zip(predicted_labels, array_labels):
+        total += 1
+        if abs(x - y) > 0.1:
+            wrong += 1
+
+    return wrong / total
+
+
+    # bs=scores.size(0)
+    # predicted_labels = scores.detach().numpy()
+    # array_labels = labels.detach().numpy()
+    # num_matches = 0
+    # for i in range(len(predicted_labels[0])):
+    #     if abs(predicted_labels[0][i] - array_labels[i]) < 0.01:
+    #         num_matches += 1
     # indicator = (abs(predicted_labels.item() - labels.item()) < 0.001)
     # num_matches = indicator.sum()
     # print(num_matches)
