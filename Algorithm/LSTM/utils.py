@@ -2,8 +2,8 @@ import torch
 import numpy as np
 
 def get_error(scores , labels):
-    predicted_labels = scores.detach().numpy()
-    array_labels = labels.detach().numpy()
+    predicted_labels = scores.detach().numpy()[0]
+    array_labels = labels.detach().numpy()[0]
 
     wrong = 0
     total = 0
