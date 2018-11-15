@@ -9,7 +9,7 @@ def get_error(scores , labels):
     total = 0
     for x, y in zip(predicted_labels, array_labels):
         total += 1
-        if abs(x - y) > 0.1:
+        if abs(x - y) > 0.5:
             wrong += 1
 
     return wrong / total
