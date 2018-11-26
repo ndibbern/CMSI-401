@@ -1,0 +1,21 @@
+body {
+    background-image: url("bk.jpeg");
+    background-color: #cccccc;
+ }
+
+
+
+ .details {
+    font-size: 1.3em;
+    padding: 12px;
+    position: absolute;
+    width: 60%;
+    height: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+ }
+
+ .center {
+    margin-top: 24px;
+ }
