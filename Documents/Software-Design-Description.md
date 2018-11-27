@@ -63,11 +63,15 @@ The Deeper insights system architecture is comprised of a web-browser-based user
 
 ![RNN-architecture-design](./RNN-architecture-design.png)
 
-**Fig. 1 RNN scaled down architectural design**
+**Figure 1: RNN scaled down architectural design**![Architectual Design Diagram](./Architectual Design Diagram.svg)
 
+**Figure 2: Deeper Insight Software Architectural Diagram**
 
+#### Use Case Diagram
 
-ADD DIAGRAM FRONT END AND ALGORITHM
+![Use Case Diagram](./Use Case Diagram.svg)
+
+Figure 3: Deeper Insight Use Case Diagram for Overall Features
 
 # 6.1 Function and Requirements Descriptions
 
