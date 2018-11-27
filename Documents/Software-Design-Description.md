@@ -16,8 +16,6 @@
 
 6.2.3 Architectural Design Diagrams
 
-6.3 CSC and CSU Descriptions
-
 
 
 ## 6.1 Introduction
@@ -69,11 +67,11 @@ The Deeper insights system architecture is comprised of a web-browser-based user
 
 ### 6.2.2 Major Software Interactions
 
-The main software interaction for Deeper Insights is 
-
 ### 6.2.3 Architectural Design Diagrams
 
+![RNN-architecture-design](./RNN-architecture-design.png)
 
+**Fig. 1 RNN scaled down architectural design**
 
 # 6.1 Function and Requirements Descriptions
 
