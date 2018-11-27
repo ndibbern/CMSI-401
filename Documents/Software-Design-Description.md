@@ -42,24 +42,16 @@ The Deeper insights system architecture is comprised of a web-browser-based user
 
 ### 6.2.1 Major Software Components
 
-* **Front End CSC** 
-  * About Page
-  * Header
-  * Climate Display
-  * Navigation bar
-    * Button linkind to the about page
-    * El Niño predictions
-    * Chimate Change
+* **Front End** 
+  * About page
+  * Main page
+    * Climate Display
+    * Navigation bar
+      * Button linkind to the about page
+      * El Niño predictions
+      * Chimate Change
 * **RNN algorithm**
-  * torch libraries
-  * 20 hidden layers of dimension 100 neuron
-  * 10 convolutional layers
-  * Model Class
-  * Loss Class
-  * Cross Entropy loss
-  * 70000 training points
-  * Sentence word of 5
-  * Batch sizes of 30
+  * The algorithm is one RNN module
 * **Server**
   * Google cloud hosted on a VM using a Tesla V100 GPU
   * Using US-central-c1 in Iowa
@@ -71,7 +63,15 @@ The Deeper insights system architecture is comprised of a web-browser-based user
 
 ![RNN-architecture-design](./RNN-architecture-design.png)
 
-**Fig. 1 RNN scaled down architectural design**
+**Figure 1: RNN scaled down architectural design**![Architectual Design Diagram](./Architectual Design Diagram.svg)
+
+**Figure 2: Deeper Insight Software Architectural Diagram**
+
+#### Use Case Diagram
+
+![Use Case Diagram](./Use Case Diagram.svg)
+
+Figure 3: Deeper Insight Use Case Diagram for Overall Features
 
 # 6.1 Function and Requirements Descriptions
 
