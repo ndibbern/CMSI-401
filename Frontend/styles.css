@@ -1,0 +1,23 @@
+body {
+    background-image: url("bk.jpeg");
+    background-color: #cccccc;
+ }
+
+
+
+ .details {
+    font-size: 1.3em;
+    padding: 12px;
+    position: absolute;
+    width: 60%;
+    height: fit-content;
+    margin-top: 64px;
+    margin-bottom: 32px;
+    left: 50%;
+    transform: translate(-50%, -0%);
+ }
+
+ .center {
+    margin-top: 32px;
+    margin-bottom: 32px;
+ }

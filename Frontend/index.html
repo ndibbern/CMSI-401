@@ -1,0 +1,95 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Deeper Insights</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles.css?v=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+</head>
+
+<body>
+
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="./index.html">Deeper-Insights</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="./index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./algorithm.html">Predictions</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="card details">
+        <div class="card-body">
+        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab"
+                    aria-controls="pills-home" aria-selected="true">Problem</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="sc" data-toggle="pill" href="#pills-profile" role="tab"
+                    aria-controls="pills-profile" aria-selected="false">Solution</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab"
+                    aria-controls="pills-contact" aria-selected="false">Challenges</a>
+            </li>
+        </ul>
+        <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                According to the Department of Civil Engineering and Environmental Sciences at LMU, climate change projections continue to be dominated by large uncertainties.
+                <ul>
+                    <li>Complex dynamic models</li>
+                    <li>Outdated statistical models</li>
+                    <li>Computationally inefficient “ensemble methods”</li>
+                </ul>
+                <img class="card-img-bottom" src="./prob.png" alt="Card image cap">
+            </div>
+            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                Thanks to recent research in the field of Artificial Intelligence, in particular the success of Deep Learning algorithms to take advantage of big data, combined with the availability of Earth observations from space and from the ground, breakthroughs appear to be within reach.
+                <ul>
+                    <li>Deep Learning Algorithms</li>
+                    <li>High availability of data</li>
+                    <li>Cheap accessibility to cloud computing</li>
+                </ul>
+                <img class="card-img-bottom" src="./sol.png" alt="Card image cap">
+            </div>
+            <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                Because Deep Learning presents an activa area of research in the Artificial Intelligence community, many challenges arise from the fact that software has not really been developed for this specific purpose at this time.
+                <ul>
+                    <li>Harness the power of big data</li>
+                    <li>Defeat the accuracy of currently used statistical and dynamical models</li>
+                    <li>Produce an algorithm that is fast and simple</li>
+                </ul>
+                <img class="card-img-bottom" src="./cha.png" alt="Card image cap">
+
+            </div>
+        </div>
+        </div>
+    </div>
+
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
