@@ -12,11 +12,11 @@
 
 6.2.1 Major Software Components
 
-6.2.2 Major Software Interactions
+6.2.2 Architectural Design Diagrams
 
-6.2.3 Architectural Design Diagrams
+6.3 Function and Requirements Descriptions
 
-
+6.3.1 Class Descriptions
 
 ## 6.1 Introduction
 
@@ -57,36 +57,34 @@ The Deeper insights system architecture is comprised of a web-browser-based user
   * Using US-central-c1 in Iowa
   *  Will be hosted under natidibbern@gmail account
 
-### 6.2.2 Major Software Interactions
-
-### 6.2.3 Architectural Design Diagrams
+### 6.2.2 Architectural Design Diagrams
 
 ![RNN-architecture-design](./RNN-architecture-design.png)
 
-**Figure 1: RNN scaled down architectural design**![Architectual Design Diagram](./Architectual Design Diagram.svg)
+**Figure 1: RNN scaled down architectural design**![Architectual Design Diagram](./Architectual-Design-Diagram.svg)
 
 **Figure 2: Deeper Insight Software Architectural Diagram**
 
 #### Use Case Diagram
 
-![Use Case Diagram](./Use Case Diagram.svg)
+![Use Case Diagram](./Use-Case-Diagram.svg)
 
-Figure 3: Deeper Insight Use Case Diagram for Overall Features
+**Figure 3: Deeper Insight Use Case Diagram for Overall Features**
 
-# 6.1 Function and Requirements Descriptions
+# 6.3 Function and Requirements Descriptions
 
  In the requirements that follow, "user" is understood to be professors and students from the Department of Civil Engineering and Environmental Sciences at LMU. Users will have the ability to access the Deeper Insights predictions at any time.
 
-### 6.1.1 Class Descriptions
+### 6.3.1 Class Descriptions
 
-### 6.1.1.1  Frontend
+### 6.3.1.1  Frontend
 
 The Deeper Insight's Frontend is a critical component  because if allows users to visualize the RNN algorithm predictions and undertand what they mean. 
 
-### 6.1.1.2  Server
+### 6.3.1.2  Server
 
 The Server  is where the algorithm will be stored and run. This will be a Google Cloud Server.
 
-### 6.1.1.3 RNN Algorithm
+### 6.3.1.3 RNN Algorithm
 
 The RNN algorithm will be designed to allow fast predictions as new data is available.
